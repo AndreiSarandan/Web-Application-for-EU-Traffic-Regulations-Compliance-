@@ -69,7 +69,7 @@ function getAQIColor(aqi) {
 }
 
 function getAQIData(city) {
-    var apiUrl = 'https://api.waqi.info/feed/' + encodeURIComponent(city) + '/?token=82645b03feba4f3384606a8471f00510abc10c37';
+    var apiUrl = 'https://api.waqi.info/feed/' + encodeURIComponent(city) + '/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
     return fetch(apiUrl)
         .then(response => response.json())
         .then(data => data.data.aqi)
